@@ -254,7 +254,7 @@ export default function Homepage() {
             </div>
           </div>
           <div className="bg-[#006EFF] flex flex-col justify-center items-center w-full relative">
-            <div className="w-full flex flex-col pt-4 sm:pt-12 justify-center items-center relative max-w-6xl z-50 px-6 sm:px-8">
+            <div className="w-full flex flex-col pt-3 sm:pt-12 justify-center items-center relative max-w-6xl z-50 px-6 sm:px-8">
               <div className="w-full max-w-4xl aspect-21/11 bg-white rounded-2xl relative">
                 <img
                   src="/junior-program-character-1.webp"
@@ -264,7 +264,7 @@ export default function Homepage() {
                 <img
                   src="/junior-program-character-2.webp"
                   alt="character koding akademi"
-                  className="absolute -top-8 sm:-top-16 -right-12 md:-right-20 md:h-36 sm:h-28 h-18"
+                  className="absolute -top-8 sm:-top-16 -right-10 sm:-right-12 md:-right-20 md:h-36 sm:h-28 h-18"
                 />
               </div>
               <div className="w-full  sm:max-w-fit md:max-w-2xl bg-white relative z-[60] top-0 mt-8 sm:mt-0 sm:-top-12 rounded-3xl p-4 sm:p-6 shadow-xl flex flex-col justify-center items-center sm:gap-8 gap-5 inner-shadow-combined-2">
@@ -322,27 +322,28 @@ export default function Homepage() {
       </section>
       {/* END JUNIOR PROGRAM */}
       {/* START WHY CODING */}
-      {/* <section className="flex justify-center items-center w-full">
-        <div className="flex flex-col justify-center items-center w-full gap-10 max-w-6xl">
-          <div className="flex flex-col justify-center items-center gap-4 text-center max-w-xl">
-            <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
-              Why Coding?
-            </span>
-            <h2 className="text-4xl font-bold leading-14">
-              Start Early, Think Bigger
-            </h2>
-            <p className="text-base opacity-80 leading-7">
+      <section className="flex justify-center items-center w-full">
+        <div className="flex flex-col justify-center items-center w-full gap-10 max-w-6xl px-6 sm:px-8">
+          <div className="flex flex-col justify-center items-center gap-3 sm:gap-4 text-center max-w-xl">
+            <TitleLayout
+              title="Let’s Start Learning Today"
+              subtitle="Why Coding?"
+              align="Center"
+              position="Center"
+              type="Normal"
+            />
+            <p className="text-sm sm:text-base opacity-80 leading-7">
               Belajar coding bukan cuma tentang jadi programmer — ini tentang
               belajar berpikir logis, kreatif, dan siap menghadapi masa depan
               digital.
             </p>
           </div>
-          <div className="grid flex-row justify-start items-stretch gap-6 w-full grid-cols-3">
-            <div className="flex bg-white p-8 rounded-lg border border-[#006EFF] flex-col gap-10">
+          <div className="grid flex-row justify-start items-stretch gap-4 sm:gap-6 w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            <div className="flex bg-white p-6 sm:p-8 rounded-lg border border-[#006EFF] flex-col gap-10">
               <img
                 src="/homepage-why-1.webp"
                 alt="icon why coding koding akademi"
-                className="w-16"
+                className="w-14 sm:w-16"
               />
               <div className="flex flex-col gap-2">
                 <p className="font-semibold text-xl">Future Language</p>
@@ -352,39 +353,18 @@ export default function Homepage() {
                 </p>
               </div>
             </div>
-            <div className="flex bg-white p-8 rounded-lg border border-[#006EFF] flex-col gap-10">
-              <img
-                src="/homepage-why-1.webp"
-                alt="icon why coding koding akademi"
-                className="w-16"
-              />
-              <div className="flex flex-col gap-2">
-                <p className="font-semibold text-xl">Future Language</p>
-                <p className="opacity-70 leading-7 text-base">
-                  Coding adalah bahasa masa depan yang digunakan di hampir semua
-                  bidang teknologi.
-                </p>
-              </div>
-            </div>
-            <div className="flex bg-white overflow-hidden rounded-lg border border-[#006EFF] flex-col gap-10">
+            <div className="hidden sm:flex md:hidden bg-white overflow-hidden rounded-lg border border-[#006EFF] flex-col gap-10">
               <img
                 src="/homepage-why-image-1.webp"
                 alt="image why coding koding akademi"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="flex bg-white overflow-hidden rounded-lg border border-[#006EFF] flex-col gap-10">
-              <img
-                src="/homepage-why-image-2.webp"
-                alt="image why coding koding akademi"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="flex bg-white p-8 rounded-lg border border-[#006EFF] flex-col gap-10">
+            <div className="flex bg-white p-6 sm:p-8 rounded-lg border border-[#006EFF] flex-col gap-10">
               <img
                 src="/homepage-why-1.webp"
                 alt="icon why coding koding akademi"
-                className="w-16"
+                className="w-14 sm:w-16"
               />
               <div className="flex flex-col gap-2">
                 <p className="font-semibold text-xl">Future Language</p>
@@ -394,11 +374,46 @@ export default function Homepage() {
                 </p>
               </div>
             </div>
-            <div className="flex bg-white p-8 rounded-lg border border-[#006EFF] flex-col gap-10">
+            <div className="hidden md:flex bg-white overflow-hidden rounded-lg border border-[#006EFF] flex-col gap-10">
+              <img
+                src="/homepage-why-image-1.webp"
+                alt="image why coding koding akademi"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="hidden md:flex bg-white overflow-hidden rounded-lg border border-[#006EFF] flex-col gap-10">
+              <img
+                src="/homepage-why-image-2.webp"
+                alt="image why coding koding akademi"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="flex bg-white p-6 sm:p-8 rounded-lg border border-[#006EFF] flex-col gap-10">
               <img
                 src="/homepage-why-1.webp"
                 alt="icon why coding koding akademi"
-                className="w-16"
+                className="w-14 sm:w-16"
+              />
+              <div className="flex flex-col gap-2">
+                <p className="font-semibold text-xl">Future Language</p>
+                <p className="opacity-70 leading-7 text-base">
+                  Coding adalah bahasa masa depan yang digunakan di hampir semua
+                  bidang teknologi.
+                </p>
+              </div>
+            </div>
+            <div className="hidden sm:flex md:hidden bg-white overflow-hidden rounded-lg border border-[#006EFF] flex-col gap-10">
+              <img
+                src="/homepage-why-image-2.webp"
+                alt="image why coding koding akademi"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="flex bg-white p-6 sm:p-8 rounded-lg border border-[#006EFF] flex-col gap-10">
+              <img
+                src="/homepage-why-1.webp"
+                alt="icon why coding koding akademi"
+                className="w-14 sm:w-16"
               />
               <div className="flex flex-col gap-2">
                 <p className="font-semibold text-xl">Future Language</p>
@@ -410,11 +425,11 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       {/* END WHY CODING */}
       {/* START CURRICULLUM */}
-      {/* <section className="flex relative overflow-hidden w-full justify-center items-center bg-gradient-to-b from-[#ffffff] to-[#F1F2FF]">
-        <div className="w-full max-w-6xl flex justify-between items-center gap-10 relative py-16 overflow-hidden">
+      <section className="flex relative overflow-hidden w-full justify-center items-center bg-gradient-to-b from-[#ffffff] to-[#F1F2FF]">
+        <div className="w-full max-w-6xl flex flex-col md:flex-row justify-between items-center gap-8 md:gap-10 relative py-16 overflow-hidden px-6 sm:px-8">
           <div className="flex flex-1 justify-center items-center relative z-20">
             <img
               src="/homepage-curriculum-main.webp"
@@ -424,17 +439,18 @@ export default function Homepage() {
             <img
               src="/homepage-curriculum-icon.webp"
               alt="curriculum icon"
-              className="absolute -top-12 left-8 rotate-12 z-10 w-40"
+              className="absolute -top-12 left-8 rotate-12 z-10 w-24 sm:w-32 md:w-40"
             />
           </div>
-          <div className="flex flex-col gap-4 flex-1 relative z-20">
-            <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
-              INTERNATIONAL CURRICULUM
-            </span>
-            <h2 className="text-4xl font-bold leading-14">
-              Accelerated Learning for Future Innovators
-            </h2>
-            <p className="text-base opacity-80 leading-7">
+          <div className="flex flex-col gap-3 sm:gap-4 flex-1 relative z-20">
+            <TitleLayout
+              title="Let’s Start Learning Today"
+              subtitle="International Curriculum"
+              align="Left"
+              position="Left"
+              type="Normal"
+            />
+            <p className="text-sm sm:text-base opacity-80 leading-7">
               Transformasi digital bukanlah sekadar wacana masa depan, ia telah
               menjadi kenyataan yang dimulai hari ini bersama Mediatech.
             </p>
@@ -443,14 +459,14 @@ export default function Homepage() {
         <img
           src="/homepage-curriculum-bg-icon-1.webp"
           alt="bg icon"
-          className="absolute bottom-0 -right-12 w-52 rotate-12 z-10 opacity-35"
+          className="absolute bottom-0 -right-12 w-32 sm:w-40 md:w-52 rotate-12 z-10 opacity-35"
         />
         <img
           src="/homepage-curriculum-bg-icon-2.webp"
           alt="bg icon"
-          className="absolute bottom-4 left-8 -rotate-6 w-52 opacity-35"
+          className="absolute -bottom-4 md:bottom-4 -left-4 md:left-8 -rotate-6 w-32 sm:w-40 md:w-52 opacity-35"
         />
-      </section> */}
+      </section>
       {/* END CURRICULLUM */}
       {/* START TOOLS */}
       {/* <section className="flex justify-center items-center w-full">

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CardTestimonialLarge() {
   return (
     <div className="card min-w-full px-8 bg-white flex justify-between items-center gap-10">

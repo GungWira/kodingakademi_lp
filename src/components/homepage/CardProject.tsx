@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CardProject() {
   return (
     <div className="card-small hover:bg-stone-50 flex flex-col justify-center items-center bg-white border border-[#DEDEDE] rounded-xl px-4 py-5">

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function CardTestimonialSmall() {
   return (
     <div className="card-small flex snap-start justify-center items-center relative overflow-hidden rounded-xl">

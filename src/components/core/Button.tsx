@@ -1,0 +1,27 @@
+type ButtonProps = {
+  content: string;
+  type?: "White" | "Blue";
+  style?: string;
+};
+
+export default function Button({ content, style, type = "Blue" }: ButtonProps) {
+  return (
+    <a href="">
+      <button
+        className={`${style} ${
+          type == "Blue" && "bg-[#006EFF] text-white hover:bg-[#005DD7]"
+        } ${
+          type == "White" && "bg-white text-[#006EFF] hover:bg-stone-50"
+        }  px-4 py-3 cursor-pointer  text-sm rounded-sm font-semibold flex justify-center items-center gap-3 `}
+      >
+        {content}
+        {type == "Blue" && (
+          <img src="/arrow-icon.webp" alt="arrow icon" className="h-4" />
+        )}
+        {type == "White" && (
+          <img src="/arrow-icon-blue.webp" alt="arrow icon" className="h-4" />
+        )}
+      </button>
+    </a>
+  );
+}

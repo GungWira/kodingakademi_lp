@@ -1,3 +1,5 @@
+import TitleLayout from "./TitleLayout";
+
 const logos = [
   "/logo/bootcamp_partner/BHC_Logo.png",
   "/logo/bootcamp_partner/BREWMELOGO.png",
@@ -11,12 +13,13 @@ export default function SchoolLogoSlider() {
     <section className="w-full flex justify-center items-center">
       <div className="w-full max-w-7xl flex flex-col justify-center items-center gap-10 sm:gap-16 overflow-hidden">
         <div className="w-full max-w-xl flex flex-col justify-center items-center gap-3 sm:gap-4">
-          <span className="subtitle text-[#006EFF] font-medium uppercase tracking-widest text-xs sm:text-base">
-            School Partner
-          </span>
-          <h2 className="text-xl sm:text-4xl leading-7 sm:leading-14 font-bold text-center">
-            Trusted by Partnered Schools
-          </h2>
+          <TitleLayout
+            title="Trusted by Partnered Schools"
+            subtitle="School Partner"
+            align="Center"
+            position="Center"
+            type="Normal"
+          />
         </div>
 
         {/* Logo slider */}

@@ -2,6 +2,7 @@ import ScrollingBanner from "../components/homepage/Slider";
 import Button from "../components/core/Button";
 import SchoolLogoSlider from "../components/core/SchoolLogoSlider";
 import BoxCardProgram from "../components/homepage/BoxCardProgram";
+import TitleLayout from "../components/core/TitleLayout";
 // import Navbar from "../components/core/Navbar";
 // import CardTestimonialLarge from "../components/homepage/CardTestimonialLarge";
 // import CallToAction from "../components/core/CallToAction";
@@ -44,12 +45,13 @@ export default function Homepage() {
       {/* START PROGRAM */}
       <section className="w-full flex justify-center items-center">
         <div className="w-full max-w-6xl px-6 sm:px-8 flex justify-start items-start flex-col gap-3 sm:gap-4">
-          <span className="subtitle text-[#006EFF] font-medium uppercase tracking-widest text-xs sm:text-base">
-            Our Program
-          </span>
-          <h2 className="text-xl sm:text-4xl leading-7 sm:leading-14 font-bold">
-            Let’s Start Learning Today
-          </h2>
+          <TitleLayout
+            title="Let’s Start Learning Today"
+            subtitle="Our Program"
+            align="Left"
+            position="Left"
+            type="Normal"
+          />
           <BoxCardProgram />
         </div>
       </section>

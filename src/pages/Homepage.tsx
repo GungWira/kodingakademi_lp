@@ -1,35 +1,35 @@
-import Navbar from "../components/core/Navbar";
 import ScrollingBanner from "../components/homepage/Slider";
 import Button from "../components/core/Button";
-import CardTestimonialLarge from "../components/homepage/CardTestimonialLarge";
 import SchoolLogoSlider from "../components/core/SchoolLogoSlider";
-import CallToAction from "../components/core/CallToAction";
-import Footer from "../components/core/Footer";
-import BoxCardTestimonialSmall from "../components/homepage/BoxCardTestimonialSmall";
-import BoxCardProject from "../components/homepage/BoxCardProject";
 import BoxCardProgram from "../components/homepage/BoxCardProgram";
+// import Navbar from "../components/core/Navbar";
+// import CardTestimonialLarge from "../components/homepage/CardTestimonialLarge";
+// import CallToAction from "../components/core/CallToAction";
+// import Footer from "../components/core/Footer";
+// import BoxCardTestimonialSmall from "../components/homepage/BoxCardTestimonialSmall";
+// import BoxCardProject from "../components/homepage/BoxCardProject";
 
 export default function Homepage() {
   return (
     <div className="w-full flex flex-col justify-start items-start">
-      <Navbar />
+      {/* <Navbar /> */}
       {/* START HERO */}
       {/* SLIDER */}
       <ScrollingBanner />
       {/* SLIDER */}
       <section className="w-full flex justify-center items-center mt-8">
-        <div className="w-full max-w-6xl px-8 flex justify-between items-start gap-12">
-          <h1 className="font-bold text-4xl flex-1 leading-relaxed">
+        <div className="w-full max-w-6xl px-6 sm:px-8 flex justify-between items-start gap-3 sm:gap-12 flex-col sm:flex-row">
+          <h1 className="font-bold flex-1 text-2xl sm:text-4xl leading-9 sm:leading-14">
             Pusat Belajar{" "}
-            <span className="relative px-2 py-1 text-white">
+            <span className="relative px-2 py-1 text-white inline-block">
               {" "}
               <span className="absolute top-0 left-0 w-full h-full bg-[#006EFF] -z-1 rotate-1 rounded-md"></span>
               Coding
             </span>
             , AI dan Robotika
           </h1>
-          <div className="flex flex-col gap-4 flex-1 max-w-96">
-            <p className="text-base opacity-80 leading-relaxed">
+          <div className="flex flex-col gap-4 flex-1 sm:max-w-96">
+            <p className="text-sm sm:text-base opacity-80 leading-relaxed">
               Transformasi digital bukanlah sekadar wacana masa depan, ia telah
               menjadi kenyataan yang dimulai hari ini bersama Mediatech.
             </p>
@@ -41,20 +41,21 @@ export default function Homepage() {
       {/* START SPONSOR SCHOOL */}
       <SchoolLogoSlider />
       {/* END SPONSOR SCHOOL */}
-
       {/* START PROGRAM */}
       <section className="w-full flex justify-center items-center">
-        <div className="w-full max-w-6xl px-8 flex justify-start items-start flex-col gap-4">
-          <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
+        <div className="w-full max-w-6xl px-6 sm:px-8 flex justify-start items-start flex-col gap-3 sm:gap-4">
+          <span className="subtitle text-[#006EFF] font-medium uppercase tracking-widest text-xs sm:text-base">
             Our Program
           </span>
-          <h2 className="text-4xl font-bold">Let’s Start Learning Today</h2>
+          <h2 className="text-xl sm:text-4xl leading-7 sm:leading-14 font-bold">
+            Let’s Start Learning Today
+          </h2>
           <BoxCardProgram />
         </div>
       </section>
       {/* END PROGRAM */}
       {/* START BOOTCAMP */}
-      <section className="w-full flex justify-center items-center">
+      {/* <section className="w-full flex justify-center items-center">
         <div className="w-full max-w-6xl flex justify-between items-stretch gap-10">
           <div className="relative object-cover flex justify-center items-center flex-1 rounded-xl">
             <img
@@ -127,10 +128,10 @@ export default function Homepage() {
             <Button content="More Information" style="mt-4" />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* END BOOTCAMP */}
       {/* START SENIOR PROGRAM */}
-      <section className="w-full flex justify-center items-center">
+      {/* <section className="w-full flex justify-center items-center">
         <div className="w-full max-w-6xl flex justify-between items-start gap-10">
           <div className="flex flex-1 flex-col justify-start items-start gap-4">
             <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
@@ -203,10 +204,10 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* END SENIOR PROGRAM */}
       {/* START JUNIOR PROGRAM */}
-      <section className="w-full flex justify-center items-center relative">
+      {/* <section className="w-full flex justify-center items-center relative">
         <div className="flex relative overflow-hidden flex-col justify-center items-center w-full">
           <div className="flex justify-center relative -bottom-1 items-center w-full overflow-hidden">
             <img
@@ -303,10 +304,10 @@ export default function Homepage() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* END JUNIOR PROGRAM */}
       {/* START WHY CODING */}
-      <section className="flex justify-center items-center w-full">
+      {/* <section className="flex justify-center items-center w-full">
         <div className="flex flex-col justify-center items-center w-full gap-10 max-w-6xl">
           <div className="flex flex-col justify-center items-center gap-4 text-center max-w-xl">
             <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
@@ -394,10 +395,10 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* END WHY CODING */}
       {/* START CURRICULLUM */}
-      <section className="flex relative overflow-hidden w-full justify-center items-center bg-gradient-to-b from-[#ffffff] to-[#F1F2FF]">
+      {/* <section className="flex relative overflow-hidden w-full justify-center items-center bg-gradient-to-b from-[#ffffff] to-[#F1F2FF]">
         <div className="w-full max-w-6xl flex justify-between items-center gap-10 relative py-16 overflow-hidden">
           <div className="flex flex-1 justify-center items-center relative z-20">
             <img
@@ -434,10 +435,10 @@ export default function Homepage() {
           alt="bg icon"
           className="absolute bottom-4 left-8 -rotate-6 w-52 opacity-35"
         />
-      </section>
+      </section> */}
       {/* END CURRICULLUM */}
       {/* START TOOLS */}
-      <section className="flex justify-center items-center w-full">
+      {/* <section className="flex justify-center items-center w-full">
         <div className="flex flex-col w-full max-w-7xl gap-10 justify-center items-center">
           <div className="flex flex-row justify-between items-center gap-10 max-w-6xl w-full">
             <div className="flex flex-col flex-1 gap-4 max-w-md">
@@ -616,10 +617,10 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* END TOOLS */}
       {/* START TESTIMONIAL */}
-      <section className="flex justify-center items-center w-full">
+      {/* <section className="flex justify-center items-center w-full">
         <div className="w-full max-w-6xl flex flex-col justify-center items-center gap-10">
           <div className="flex text-center flex-col max-w-xl justify-center items-center gap-4">
             <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
@@ -656,10 +657,10 @@ export default function Homepage() {
           </div>
           <BoxCardTestimonialSmall />
         </div>
-      </section>
+      </section> */}
       {/* END TESTIMONIAL */}
       {/* START PROJECTS */}
-      <section className="flex justify-center items-center w-full">
+      {/* <section className="flex justify-center items-center w-full">
         <div className="w-full gap-10 flex max-w-6xl justify-center items-center flex-col overflow-hidden">
           <div className="flex flex-row justify-between items-center gap-10 w-full">
             <div className="flex flex-col flex-1 gap-4 max-w-md">
@@ -679,10 +680,10 @@ export default function Homepage() {
           </div>
           <BoxCardProject />
         </div>
-      </section>
+      </section> */}
       {/* END PROJECTS */}
       {/* START INDUSTRY PARTENR */}
-      <section className="flex justify-center items-center w-full">
+      {/* <section className="flex justify-center items-center w-full">
         <div className="flex max-w-6xl flex-col w-full justify-center items-center gap-10">
           <div className="flex text-center flex-col max-w-xl justify-center items-center gap-4">
             <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
@@ -700,13 +701,13 @@ export default function Homepage() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* END INDUSTRY PARTENR */}
       {/* START CTA */}
-      <CallToAction />
+      {/* <CallToAction /> */}
       {/* END CTA */}
       {/* START FOOTER */}
-      <Footer />
+      {/* <Footer /> */}
       {/* END FOOTER */}
     </div>
   );

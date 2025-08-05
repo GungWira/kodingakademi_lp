@@ -16,10 +16,10 @@ export default function CardProgram() {
             "linear-gradient(to bottom, rgba(0, 110, 255, 0) 0%, #006EFF 49%, #006EFF 100%)",
         }}
       >
-        <h3 className="text-white text-xl font-semibold">
+        <h3 className="text-white text-base sm:text-xl font-semibold">
           Basic Coding Junior
         </h3>
-        <p className="text-white opacity-80 text-base">
+        <p className="text-white opacity-80 text-xs sm:text-base">
           Belajar pemrograman usia dini
         </p>
       </div>

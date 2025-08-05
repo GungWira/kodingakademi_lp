@@ -9,12 +9,12 @@ const logos = [
 export default function SchoolLogoSlider() {
   return (
     <section className="w-full flex justify-center items-center">
-      <div className="w-full max-w-7xl flex flex-col justify-center items-center gap-16 overflow-hidden">
-        <div className="w-full max-w-xl flex flex-col justify-center items-center gap-4">
-          <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
+      <div className="w-full max-w-7xl flex flex-col justify-center items-center gap-10 sm:gap-16 overflow-hidden">
+        <div className="w-full max-w-xl flex flex-col justify-center items-center gap-3 sm:gap-4">
+          <span className="subtitle text-[#006EFF] font-medium uppercase tracking-widest text-xs sm:text-base">
             School Partner
           </span>
-          <h2 className="text-4xl font-bold text-center">
+          <h2 className="text-xl sm:text-4xl leading-7 sm:leading-14 font-bold text-center">
             Trusted by Partnered Schools
           </h2>
         </div>
@@ -27,7 +27,7 @@ export default function SchoolLogoSlider() {
                 key={idx}
                 src={logo}
                 alt="school logo"
-                className="h-11 w-auto flex-shrink-0"
+                className="h-7 sm:h-11 w-auto flex-shrink-0"
               />
             ))}
           </div>

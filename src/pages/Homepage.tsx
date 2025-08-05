@@ -57,8 +57,8 @@ export default function Homepage() {
       </section>
       {/* END PROGRAM */}
       {/* START BOOTCAMP */}
-      {/* <section className="w-full flex justify-center items-center">
-        <div className="w-full max-w-6xl flex justify-between items-stretch gap-10">
+      <section className="w-full flex justify-center items-center">
+        <div className="w-full max-w-6xl flex flex-col-reverse md:flex-row justify-between items-stretch gap-10 px-6 sm:px-8">
           <div className="relative object-cover flex justify-center items-center flex-1 rounded-xl">
             <img
               src="/homepage-bootcamp.webp"
@@ -68,35 +68,40 @@ export default function Homepage() {
             <img
               src="/homepage-bootcamp-vec.webp"
               alt="bootcamp vector koding akademi"
-              className="absolute h-32 -top-12 -right-8"
+              className="absolute h-24 sm:h-32 -top-12 -right-8"
             />
             <div className="bg-white p-5 rounded-md flex items-center gap-4 absolute bottom-6 left-6">
               <img
                 src="/homepage-bootcamp-icon.webp"
                 alt="bootcamp icon"
-                className="h-10"
+                className="h-9 sm:h-10"
               />
               <div className="flex flex-col justify-start items-start">
-                <p className="text-lg font-semibold">Certified Mentor</p>
-                <p className="text-sm opacity-70">
+                <p className="text-base sm:text-lg font-semibold">
+                  Certified Mentor
+                </p>
+                <p className="text-xs sm:text-sm opacity-70">
                   Belajar dengan mentor bersertifikasi
                 </p>
               </div>
             </div>
           </div>
           <div className="flex flex-1 flex-col justify-start items-start gap-3">
-            <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
-              Bootcamp
-            </span>
-            <h2 className="text-4xl font-bold leading-14">
-              Accelerated Learning for Future Innovators
-            </h2>
-            <p className="text-base opacity-80 leading-7">
+            <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest"></span>
+            <h2 className="text-4xl font-bold leading-14"></h2>
+            <TitleLayout
+              title="Accelerated Learning for Future Innovators"
+              subtitle="Bootcamp"
+              align="Left"
+              position="Left"
+              type="Normal"
+            />
+            <p className="text-sm sm:text-base opacity-80 leading-7">
               Transformasi digital bukanlah sekadar wacana masa depan, ia telah
               menjadi kenyataan yang dimulai hari ini bersama Mediatech.
             </p>
             <div className="flex flex-col gap-2 w-full mt-4">
-              <div className="flex flex-row justify-start items-center gap-4">
+              <div className="flex flex-row justify-start items-center sm:gap-4 gap-2">
                 <img
                   className="h-4"
                   src="/homepage-bootcamp-point.webp"
@@ -106,7 +111,7 @@ export default function Homepage() {
                   Web Design 1.0 & 2.0
                 </p>
               </div>
-              <div className="flex flex-row justify-start items-center gap-4">
+              <div className="flex flex-row justify-start items-center sm:gap-4 gap-2">
                 <img
                   className="h-4"
                   src="/homepage-bootcamp-point.webp"
@@ -116,7 +121,7 @@ export default function Homepage() {
                   Web Programming (Laravel / Next Js)
                 </p>
               </div>
-              <div className="flex flex-row justify-start items-center gap-4">
+              <div className="flex flex-row justify-start items-center sm:gap-4 gap-2">
                 <img
                   className="h-4"
                   src="/homepage-bootcamp-point.webp"
@@ -130,19 +135,20 @@ export default function Homepage() {
             <Button content="More Information" style="mt-4" />
           </div>
         </div>
-      </section> */}
+      </section>
       {/* END BOOTCAMP */}
       {/* START SENIOR PROGRAM */}
-      {/* <section className="w-full flex justify-center items-center">
-        <div className="w-full max-w-6xl flex justify-between items-start gap-10">
+      <section className="w-full flex justify-center items-center">
+        <div className="w-full max-w-6xl flex flex-col md:flex-row justify-between items-start sm:gap-10 gap-6 px-6 sm:px-8">
           <div className="flex flex-1 flex-col justify-start items-start gap-4">
-            <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
-              Senior Program
-            </span>
-            <h2 className="text-4xl font-bold leading-14">
-              Accelerated Learning for Future Innovators
-            </h2>
-            <p className="text-base opacity-80 leading-7">
+            <TitleLayout
+              title="Let’s Start Learning Today"
+              subtitle="Senior Program"
+              align="Left"
+              position="Left"
+              type="Normal"
+            />
+            <p className="text-sm sm:text-base opacity-80 leading-7">
               Transformasi digital bukanlah sekadar wacana masa depan, ia telah
               menjadi kenyataan yang dimulai hari ini bersama Mediatech.
             </p>
@@ -152,37 +158,41 @@ export default function Homepage() {
                 alt="senior program image koding akademi"
                 className="w-full h-full object-cover"
               />
-              <div className="bg-white p-5 rounded-md flex items-center gap-4 absolute bottom-6 left-6">
+              <div className="bg-white p-5 rounded-md flex items-center gap-3 sm:gap-4 absolute bottom-6 left-6">
                 <img
                   src="/homepage-senior-program-icon-1.webp"
                   alt="bootcamp icon"
-                  className="h-10"
+                  className="h-8 sm:h-10"
                 />
                 <div className="flex flex-col justify-start items-start">
-                  <p className="text-lg font-semibold">Competitive Student</p>
-                  <p className="text-sm opacity-70">
+                  <p className="text-base sm:text-lg font-semibold">
+                    Competitive Student
+                  </p>
+                  <p className="text-xs sm:text-sm opacity-70">
                     Belajar dengan siswa kompetitif
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-1 flex-col justify-start items-start gap-10">
+          <div className="flex flex-1 flex-col justify-start items-start sm:gap-10 gap-6">
             <div className="flex relative justify-center items-center w-full aspect-3/4 overflow-hidden rounded-2xl">
               <img
                 src="/homepage-senior-program-2.webp"
                 alt="senior program image koding akademi"
                 className="w-full h-full object-cover"
               />
-              <div className="bg-white p-5 rounded-md flex items-center gap-4 absolute bottom-6 left-6">
+              <div className="bg-white p-5 rounded-md flex items-center gap-3 sm:gap-4 absolute bottom-6 left-6">
                 <img
                   src="/homepage-senior-program-icon-2.webp"
                   alt="bootcamp icon"
-                  className="h-10"
+                  className="h-8 sm:h-10"
                 />
                 <div className="flex flex-col justify-start items-start">
-                  <p className="text-lg font-semibold">World Curriculum</p>
-                  <p className="text-sm opacity-70">
+                  <p className="text-base sm:text-lg font-semibold">
+                    World Curriculum
+                  </p>
+                  <p className="text-xs sm:text-sm opacity-70">
                     Kurikulum berstandar internasional
                   </p>
                 </div>
@@ -190,15 +200,17 @@ export default function Homepage() {
             </div>
             <div className="flex justify-between items-start gap-8 w-full">
               <div className="flex flex-col gap-3 flex-1">
-                <p className="text-5xl font-bold">92%</p>
-                <p className="text-base opacity-80">Ratensi Pengguna</p>
+                <p className="text-4xl sm:text-5xl font-bold">92%</p>
+                <p className="text-sm sm:text-base opacity-80">
+                  Ratensi Pengguna
+                </p>
                 <div className="w-full h-1 rounded-2xl bg-[#E8E8E8] overflow-hidden">
                   <div className="w-[92%] h-full bg-[#006EFF] rounded-2xl"></div>
                 </div>
               </div>
               <div className="flex flex-col gap-3 flex-1">
-                <p className="text-5xl font-bold">97%</p>
-                <p className="text-base opacity-80">Pengguna Puas</p>
+                <p className="text-4xl sm:text-5xl font-bold">97%</p>
+                <p className="text-sm sm:text-base opacity-80">Pengguna Puas</p>
                 <div className="w-full h-1 rounded-2xl bg-[#E8E8E8] overflow-hidden">
                   <div className="w-[97%] h-full bg-[#006EFF] rounded-2xl"></div>
                 </div>
@@ -206,7 +218,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       {/* END SENIOR PROGRAM */}
       {/* START JUNIOR PROGRAM */}
       {/* <section className="w-full flex justify-center items-center relative">

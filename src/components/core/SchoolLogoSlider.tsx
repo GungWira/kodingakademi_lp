@@ -12,7 +12,7 @@ export default function SchoolLogoSlider() {
   return (
     <section className="w-full flex justify-center items-center">
       <div className="w-full max-w-7xl flex flex-col justify-center items-center gap-10 sm:gap-16 overflow-hidden">
-        <div className="w-full max-w-xl flex flex-col justify-center items-center gap-3 sm:gap-4">
+        <div className="w-full max-w-xl flex flex-col justify-center items-center gap-3 sm:gap-4 px-6 sm:px-8">
           <TitleLayout
             title="Trusted by Partnered Schools"
             subtitle="School Partner"

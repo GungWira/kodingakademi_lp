@@ -32,7 +32,7 @@ export default function BoxCardProgram() {
   };
 
   return (
-    <div className="relative w-full sm:mt-8 mt-4">
+    <div className="relative w-full mt-1">
       {/* Left Button */}
       <button
         onClick={() => handleScroll("left")}

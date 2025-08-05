@@ -2,7 +2,7 @@ export default function CardProgram() {
   return (
     <a
       href=""
-      className="min-w-72 w-72 rounded-xl flex relative overflow-hidden aspect-square justify-center items-center group"
+      className="card-small rounded-xl flex relative overflow-hidden aspect-square justify-center items-center group"
     >
       <img
         src="/program-1.webp"

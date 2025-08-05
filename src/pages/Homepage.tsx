@@ -1,6 +1,5 @@
 import Navbar from "../components/core/Navbar";
 import ScrollingBanner from "../components/homepage/Slider";
-import CardProgram from "../components/CardProgram";
 import Button from "../components/core/Button";
 import CardTestimonialLarge from "../components/homepage/CardTestimonialLarge";
 import SchoolLogoSlider from "../components/core/SchoolLogoSlider";
@@ -8,6 +7,7 @@ import CallToAction from "../components/core/CallToAction";
 import Footer from "../components/core/Footer";
 import BoxCardTestimonialSmall from "../components/homepage/BoxCardTestimonialSmall";
 import BoxCardProject from "../components/homepage/BoxCardProject";
+import BoxCardProgram from "../components/homepage/BoxCardProgram";
 
 export default function Homepage() {
   return (
@@ -49,12 +49,7 @@ export default function Homepage() {
             Our Program
           </span>
           <h2 className="text-4xl font-bold">Let’s Start Learning Today</h2>
-          <div className="w-full flex flex-row overflow-x-scroll gap-4 justify-start items-stretch">
-            <CardProgram />
-            <CardProgram />
-            <CardProgram />
-            <CardProgram />
-          </div>
+          <BoxCardProgram />
         </div>
       </section>
       {/* END PROGRAM */}

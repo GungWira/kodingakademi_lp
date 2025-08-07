@@ -4,7 +4,7 @@ import "../../../node_modules/react-slideshow-image/dist/styles.css";
 export default function Sliderv2() {
   const slideImages = [
     {
-      url: "/banner-2.webp",
+      url: "/banner-1.webp",
       caption: "Banner 1",
     },
     {
@@ -12,7 +12,7 @@ export default function Sliderv2() {
       caption: "Banner 1",
     },
     {
-      url: "/banner-2.webp",
+      url: "/banner-1.webp",
       caption: "Banner 1",
     },
     {
@@ -44,12 +44,13 @@ export default function Sliderv2() {
       <div className="w-full mt-24 md:mt-28 max-w-7xl">
         <Slide {...properties}>
           {slideImages.map((slideImage, index) => (
-            <div key={index} className="w-full rounded-xl overflow-hidden">
+            <div key={index} className="w-full overflow-hidden px-1">
               <div
                 style={{
                   ...divStyle,
                   backgroundImage: `url(${slideImage.url})`,
                 }}
+                className="rounded-lg md:rounded-2xl"
               ></div>
             </div>
           ))}

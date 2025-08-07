@@ -1,4 +1,3 @@
-import React from "react";
 import { Slide } from "react-slideshow-image";
 import "../../../node_modules/react-slideshow-image/dist/styles.css";
 

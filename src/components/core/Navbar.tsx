@@ -39,7 +39,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full z-50 bg-white fixed top-0 left-0 shadow-sm flex items-center justify-center">
+    <nav className="w-full z-50 bg-white fixed top-0 left-0 shadow-sm flex items-center justify-center z-[1000]">
       <div className="px-8 w-full max-w-6xl flex justify-between items-center gap-8 py-6">
         {/* Logo */}
         <a href="/">

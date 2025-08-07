@@ -269,7 +269,7 @@ export default function Navbar() {
                               <a
                                 key={index}
                                 href=""
-                                className="block text-xs text-gray-500 py-1"
+                                className="block text-sm text-gray-500 py-2"
                               >
                                 {subProgram}
                               </a>

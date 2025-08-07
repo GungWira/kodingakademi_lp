@@ -9,17 +9,12 @@ import BoxCardTestimonialSmall from "../components/homepage/BoxCardTestimonialSm
 import BoxCardProject from "../components/homepage/BoxCardProject";
 import CallToAction from "../components/core/CallToAction";
 import Footer from "../components/core/Footer";
-// import Navbar from "../components/core/Navbar";
-// import CardTestimonialLarge from "../components/homepage/CardTestimonialLarge";
-// import CallToAction from "../components/core/CallToAction";
-// import Footer from "../components/core/Footer";
-// import BoxCardTestimonialSmall from "../components/homepage/BoxCardTestimonialSmall";
-// import BoxCardProject from "../components/homepage/BoxCardProject";
+import Navbar from "../components/core/Navbar";
 
 export default function Homepage() {
   return (
     <div className="w-full flex flex-col justify-start items-start">
-      {/* <Navbar /> */}
+      <Navbar />
       {/* START HERO */}
       {/* SLIDER */}
       <ScrollingBanner />

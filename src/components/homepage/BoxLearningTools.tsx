@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import CardTool from "./CardTool";
 
 interface Tool {
   src: string;
@@ -70,23 +71,6 @@ export default function InfiniteMarqueeTools() {
     };
   }, [tools.length]);
 
-  const renderCard = (tool: Tool, index: number | string) => (
-    <div
-      key={index}
-      className="flex justify-start items-center gap-5 md:gap-6 p-4 md:p-5 rounded-xl min-w-fit border border-[#E8E8E8] bg-white flex-shrink-0"
-    >
-      <img
-        src={tool.src}
-        alt="tools logo"
-        className="w-12 md:w-16 rounded-lg"
-      />
-      <div className="flex flex-col">
-        <p className="font-semibold text-base md:text-lg">{tool.title}</p>
-        <p className="text-sm md:text-base opacity-70">{tool.desc}</p>
-      </div>
-    </div>
-  );
-
   return (
     <div className="w-full max-w-6xl mx-auto py-8 overflow-hidden">
       {/* Top Row - Moving Left */}
@@ -96,7 +80,9 @@ export default function InfiniteMarqueeTools() {
           className="flex gap-4 w-max"
           style={{ willChange: "transform" }}
         >
-          {duplicatedTools.map((tool, index) => renderCard(tool, index))}
+          {duplicatedTools.map((tool, index) => (
+            <CardTool key={index} tool={tool} />
+          ))}
         </div>
       </div>
 
@@ -107,9 +93,9 @@ export default function InfiniteMarqueeTools() {
           className="flex gap-4 w-max"
           style={{ willChange: "transform" }}
         >
-          {duplicatedTools.map((tool, index) =>
-            renderCard(tool, `bottom-${index}`)
-          )}
+          {duplicatedTools.map((tool, index) => (
+            <CardTool key={index} tool={tool} />
+          ))}
         </div>
       </div>
     </div>

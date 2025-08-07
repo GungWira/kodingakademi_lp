@@ -3,6 +3,7 @@ import Button from "../components/core/Button";
 import SchoolLogoSlider from "../components/core/SchoolLogoSlider";
 import BoxCardProgram from "../components/homepage/BoxCardProgram";
 import TitleLayout from "../components/core/TitleLayout";
+import BoxLearningTools from "../components/homepage/BoxLearningTools";
 // import Navbar from "../components/core/Navbar";
 // import CardTestimonialLarge from "../components/homepage/CardTestimonialLarge";
 // import CallToAction from "../components/core/CallToAction";
@@ -469,186 +470,28 @@ export default function Homepage() {
       </section>
       {/* END CURRICULLUM */}
       {/* START TOOLS */}
-      {/* <section className="flex justify-center items-center w-full">
-        <div className="flex flex-col w-full max-w-7xl gap-10 justify-center items-center">
-          <div className="flex flex-row justify-between items-center gap-10 max-w-6xl w-full">
-            <div className="flex flex-col flex-1 gap-4 max-w-md">
-              <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
-                INTERNATIONAL CURRICULUM
-              </span>
-              <h2 className="text-4xl font-bold leading-14">
-                Accelerated Learning for Future Innovators
-              </h2>
+      <section className="flex justify-center items-center w-full overflow-hidden">
+        <div className="flex flex-col w-full max-w-7xl gap-2 md:gap-10 justify-center items-start">
+          <div className="flex justify-start md:justify-between md:flex-row flex-col items-start md:items-center gap-3 md:gap-10 max-w-7xl w-full px-6 sm:px-8">
+            <div className="flex flex-col flex-1 gap-4 md:max-w-md">
+              <TitleLayout
+                title="Let’s Start Learning Today"
+                subtitle="Learning Tools"
+                align="Left"
+                position="Left"
+                type="Normal"
+              />
             </div>
-            <div className="flex flex-1 max-w-md">
-              <p className="text-base opacity-80 leading-7">
+            <div className="flex flex-1 md:max-w-md">
+              <p className="text-sm sm:text-base opacity-80 leading-7">
                 Transformasi digital bukanlah sekadar wacana masa depan, ia
                 telah menjadi kenyataan yang dimulai hari ini bersama Mediatech.
               </p>
             </div>
           </div>
-          <div className="flex flex-col justify-start items-start gap-6 max-w-8xl overflow-hidden">
-            <div className="flex flex-row justify-start items-stretch gap-4 relative -left-40">
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-1.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-2.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-3.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-4.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-5.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-6.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-7.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-row-reverse justify-end items-stretch gap-6 relative right-24">
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-1.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-2.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-3.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-4.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-5.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-6.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-              <div className="flex justify-start items-center gap-6 p-5 rounded-xl min-w-fit border border-[#E8E8E8]">
-                <img
-                  src="/tools-7.webp"
-                  alt="tools logo"
-                  className="w-16 rounded-lg"
-                />
-                <div className="flex flex-col">
-                  <p className="font-semibold text-lg">Scratch</p>
-                  <p className="text-base opacity-70">Animation and Game</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <BoxLearningTools />
         </div>
-      </section> */}
+      </section>
       {/* END TOOLS */}
       {/* START TESTIMONIAL */}
       {/* <section className="flex justify-center items-center w-full">

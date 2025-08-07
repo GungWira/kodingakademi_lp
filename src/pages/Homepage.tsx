@@ -4,6 +4,11 @@ import SchoolLogoSlider from "../components/core/SchoolLogoSlider";
 import BoxCardProgram from "../components/homepage/BoxCardProgram";
 import TitleLayout from "../components/core/TitleLayout";
 import BoxLearningTools from "../components/homepage/BoxLearningTools";
+import CardTestimonialLarge from "../components/homepage/CardTestimonialLarge";
+import BoxCardTestimonialSmall from "../components/homepage/BoxCardTestimonialSmall";
+import BoxCardProject from "../components/homepage/BoxCardProject";
+import CallToAction from "../components/core/CallToAction";
+import Footer from "../components/core/Footer";
 // import Navbar from "../components/core/Navbar";
 // import CardTestimonialLarge from "../components/homepage/CardTestimonialLarge";
 // import CallToAction from "../components/core/CallToAction";
@@ -494,15 +499,16 @@ export default function Homepage() {
       </section>
       {/* END TOOLS */}
       {/* START TESTIMONIAL */}
-      {/* <section className="flex justify-center items-center w-full">
-        <div className="w-full max-w-6xl flex flex-col justify-center items-center gap-10">
+      <section className="flex justify-center items-center w-full">
+        <div className="w-full max-w-6xl flex flex-col justify-center items-center gap-6 md:gap-10 px-6 md:px-8">
           <div className="flex text-center flex-col max-w-xl justify-center items-center gap-4">
-            <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
-              STUDENT SUCCESS
-            </span>
-            <h2 className="text-4xl font-bold leading-14">
-              Accelerated Learning for Future Innovators
-            </h2>
+            <TitleLayout
+              title="Let’s Start Learning Today"
+              subtitle="Student Success"
+              align="Center"
+              position="Center"
+              type="Normal"
+            />
           </div>
           <div className="w-full flex justify-center items-center overflow-hidden">
             <div className="w-full overflow-hidden flex justify-start items-start">
@@ -531,19 +537,20 @@ export default function Homepage() {
           </div>
           <BoxCardTestimonialSmall />
         </div>
-      </section> */}
+      </section>
       {/* END TESTIMONIAL */}
       {/* START PROJECTS */}
-      {/* <section className="flex justify-center items-center w-full">
-        <div className="w-full gap-10 flex max-w-6xl justify-center items-center flex-col overflow-hidden">
-          <div className="flex flex-row justify-between items-center gap-10 w-full">
+      <section className="flex justify-center items-center w-full">
+        <div className="w-full gap-10 flex max-w-6xl justify-center items-center flex-col overflow-hidden px-6 md:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-5 md:gap-10 w-full">
             <div className="flex flex-col flex-1 gap-4 max-w-md">
-              <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
-                STUDENT’S PROJECTS
-              </span>
-              <h2 className="text-4xl font-bold leading-14">
-                Accelerated Learning for Future Innovators
-              </h2>
+              <TitleLayout
+                title="Let’s Start Learning Today"
+                subtitle="Student Project"
+                align="Left"
+                position="Left"
+                type="Normal"
+              />
             </div>
             <div className="flex flex-1 max-w-md">
               <p className="text-base opacity-80 leading-7">
@@ -554,18 +561,19 @@ export default function Homepage() {
           </div>
           <BoxCardProject />
         </div>
-      </section> */}
+      </section>
       {/* END PROJECTS */}
       {/* START INDUSTRY PARTENR */}
-      {/* <section className="flex justify-center items-center w-full">
-        <div className="flex max-w-6xl flex-col w-full justify-center items-center gap-10">
+      <section className="flex justify-center items-center w-full">
+        <div className="flex max-w-6xl flex-col w-full justify-center items-center gap-6 md:gap-10">
           <div className="flex text-center flex-col max-w-xl justify-center items-center gap-4">
-            <span className="subtitle text-[#006EFF] font-medium text-base uppercase tracking-widest">
-              Industrial Partner
-            </span>
-            <h2 className="text-4xl font-bold leading-14">
-              Accelerated Learning for Future Innovators
-            </h2>
+            <TitleLayout
+              title="Let’s Start Learning Today"
+              subtitle="Industrial Partner"
+              align="Center"
+              position="Center"
+              type="Normal"
+            />
           </div>
           <div className="w-full">
             <img
@@ -575,13 +583,13 @@ export default function Homepage() {
             />
           </div>
         </div>
-      </section> */}
+      </section>
       {/* END INDUSTRY PARTENR */}
       {/* START CTA */}
-      {/* <CallToAction /> */}
+      <CallToAction />
       {/* END CTA */}
       {/* START FOOTER */}
-      {/* <Footer /> */}
+      <Footer />
       {/* END FOOTER */}
     </div>
   );

@@ -32,34 +32,35 @@ export default function BoxCardTestimonialSmall() {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full mt-3">
       {/* Left Button */}
       <button
         onClick={() => handleScroll("left")}
-        className="absolute top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full hover:bg-gray-100 left-2"
+        className="absolute top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full hover:bg-gray-100 left-2 hidden sm:flex"
       >
         <img
           src="/arrow-w-bg.webp"
           alt="next button"
-          className="relative z-10 hover:brightness-95 w-12 "
+          className="relative z-10 hover:brightness-95 w-9 :w-12 "
         />
       </button>
 
       {/* Right Button */}
       <button
         onClick={() => handleScroll("right")}
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 rotate-180 bg-white shadow-md rounded-full hover:bg-gray-100"
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-10 rotate-180 bg-white shadow-md rounded-full hover:bg-gray-100 hidden sm:flex"
       >
         <img
           src="/arrow-w-bg.webp"
           alt="next button"
-          className="relative z-10 hover:brightness-95 w-12 "
+          className="relative z-10 hover:brightness-95 w-9 :w-12 "
         />
       </button>
+
       {/* Card Container */}
       <div
         ref={containerRef}
-        className="w-full flex overflow-hidden scroll-smooth snap-x snap-mandatory gap-4"
+        className="w-full flex overflow-x-auto sm:overflow-hidden scroll-smooth snap-x snap-mandatory gap-4"
       >
         {[...Array(TOTAL_CARDS)].map((_, index) => (
           <CardTestimonialSmall key={index} />

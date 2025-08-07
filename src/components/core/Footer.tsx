@@ -38,9 +38,9 @@ export default function Footer() {
   return (
     <footer className="bg-[#0F172A] text-white pt-16 pb-6 px-4 md:px-12 w-full flex justify-center items-center">
       <div className="flex flex-col w-full max-w-6xl">
-        <div className="max-w-7xl mx-auto flex flex-row justify-between items-start gap-10 w-full">
+        <div className="max-w-7xl mx-auto flex flex-row justify-between items-start gap-10 w-full flex-wrap sm:flex-nowrap">
           {/* Logo + Description */}
-          <div className="flex flex-col gap-4 justify-start items-start max-w-sm">
+          <div className="flex flex-col gap-4 justify-start items-start w-full sm:w-fit sm:max-w-sm">
             <img
               src="/logo-white.webp"
               alt="Mediatech Indonesia"

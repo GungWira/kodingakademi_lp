@@ -54,7 +54,7 @@ export default function ScrollingBanner() {
   };
 
   return (
-    <div className="relative w-full overflow-hidden mt-26 md:mt-32">
+    <div className="relative w-full overflow-hidden mt-24 md:mt-32">
       <div
         className="flex gap-8 overflow-x-hidden scroll-smooth snap-x snap-mandatory no-scrollbar"
         ref={containerRef}

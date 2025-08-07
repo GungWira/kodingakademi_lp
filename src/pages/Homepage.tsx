@@ -1,4 +1,4 @@
-import ScrollingBanner from "../components/homepage/Slider";
+// import ScrollingBanner from "../components/homepage/Slider";
 import Button from "../components/core/Button";
 import SchoolLogoSlider from "../components/core/SchoolLogoSlider";
 import BoxCardProgram from "../components/homepage/BoxCardProgram";
@@ -10,6 +10,7 @@ import BoxCardProject from "../components/homepage/BoxCardProject";
 import CallToAction from "../components/core/CallToAction";
 import Footer from "../components/core/Footer";
 import Navbar from "../components/core/Navbar";
+import Sliderv2 from "../components/homepage/Slider-v2";
 
 export default function Homepage() {
   return (
@@ -17,7 +18,7 @@ export default function Homepage() {
       <Navbar />
       {/* START HERO */}
       {/* SLIDER */}
-      <ScrollingBanner />
+      <Sliderv2 />
       {/* SLIDER */}
       <section className="w-full flex justify-center items-center mt-8">
         <div className="w-full max-w-6xl px-6 sm:px-8 flex justify-between items-start gap-3 sm:gap-12 flex-col sm:flex-row">

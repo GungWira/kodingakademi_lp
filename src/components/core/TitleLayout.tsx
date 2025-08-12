@@ -4,6 +4,7 @@ type TitleLayoutProps = {
   type?: "White" | "Normal";
   align: "Center" | "Left";
   position: "Center" | "Left";
+  size?: "Normal" | "BigSize";
 };
 
 export default function TitleLayout({
@@ -12,6 +13,7 @@ export default function TitleLayout({
   type = "Normal",
   align,
   position,
+  size = "Normal",
 }: TitleLayoutProps) {
   return (
     <div
@@ -36,7 +38,9 @@ export default function TitleLayout({
         className={`
             ${type == "Normal" && "text-[#202020]"}
         ${type == "White" && "text-[#FFFFFF]"}
-            text-2xl sm:text-4xl leading-9 sm:leading-14 font-bold`}
+        ${size == "Normal" && "text-2xl sm:text-4xl leading-9 sm:leading-14"}
+        ${size == "BigSize" && "text-3xl sm:text-5xl leading-11 sm:leading-16"}
+             font-bold`}
       >
         {title}
       </h2>

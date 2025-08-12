@@ -1,10 +1,11 @@
 import "./App.css";
-import Homepage from "./pages/Homepage";
+import CourseDetail from "./pages/CourseDetail";
+// import Homepage from "./pages/Homepage";
 
 function App() {
   return (
     <>
-      <Homepage />
+      <CourseDetail />
     </>
   );
 }

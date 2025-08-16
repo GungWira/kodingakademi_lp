@@ -23,7 +23,7 @@ export default function Sliderv2() {
 
   const properties = {
     duration: 5000,
-    autoplay: false,
+    autoplay: true,
     transitionDuration: 500,
     arrows: true,
     infinite: true,
@@ -41,7 +41,7 @@ export default function Sliderv2() {
 
   return (
     <div className="w-full flex justify-center items-center ">
-      <div className="w-full mt-24 md:mt-28 max-w-7xl">
+      <div className="w-full mt-24 md:mt-28 max-w-6xl">
         <Slide {...properties}>
           {slideImages.map((slideImage, index) => (
             <div key={index} className="w-full overflow-hidden px-1">

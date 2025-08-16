@@ -2,12 +2,22 @@ type ButtonProps = {
   content: string;
   type?: "White" | "Blue";
   style?: string;
+  onClick?: () => void;
+  typeAttr?: "button" | "submit" | "reset";
 };
 
-export default function Button({ content, style, type = "Blue" }: ButtonProps) {
+export default function Button({
+  content,
+  style,
+  type = "Blue",
+  onClick,
+  typeAttr = "button",
+}: ButtonProps) {
   return (
     <a href="">
       <button
+        type={typeAttr}
+        onClick={onClick}
         className={`${style} ${
           type == "Blue" && "bg-[#006EFF] text-white hover:bg-[#005DD7]"
         } ${
